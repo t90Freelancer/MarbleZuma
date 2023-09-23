@@ -1,0 +1,27 @@
+Hi!
+I'll tell you how to create your own Zuma-like game, using my script system, based on BezierCurves.
+There are some simple rules:
+1) All params, which can influence on gameplay, is correctable in inspector.
+2) It is nesessarry to place some prefabs on scene (i'll tell about it in future).
+3) If you not understand some things (like a params in script), firstly view source code. I am strived to comment all public variables.
+
+So, let's start.
+1) Create a scene in Unity.
+2) Place a BezierPathController prefab (all prefabs stored in Assets\Resources\Prefabs).
+3) Place some control points on scene (BezierCotrolPointPrefab) and set links to their in PathController (ControlPoints field).
+When you done it, you'll see line of ball movement in editor. (of course, if you enabled DebugBezierPath option in PathController).
+You can change desinig curve if you'll move control points.
+WARNING: Minimal amount of control point is 5. (Bacause it is a curve of 3-exponent).
+4) Place
+ -BallsCannon
+ -BallsFactory
+ -BallsTrap
+ -GlobalGameManager
+prefabs and set params, which you need. It is nesessarry to set links between theirs in inspector.
+ You must set all params. Use my scene as example.
+
+PS: there is a simple way to create you own scene. Just copy my scene and correct it. There are all links are setted as needs.
+
+
+you can contanct us for support.
+mudasar.cr@gmail.com
